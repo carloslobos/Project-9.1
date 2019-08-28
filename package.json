@@ -9,7 +9,7 @@
         "watch:browsersync": "node_modules/.bin/browser-sync start --server --files css/*.css  *.html ",
         "build:clean": "rimraf css/*",
         "build:sass": "node-sass --output-style compact -o css sass",
-        "watch:sassprefixer": "onchange -d 100 sass/* node-sass --output-style compact -o css sass -- autoprefixer-cli -o css/style.css css/style.css",
+        "watch:sassprefixer": "onchange -d 100 sass/* -- node-sass --output-style compact -o css sass -- autoprefixer-cli -o css/style.css css/style.css",
         "init-project": "npm install && mkdirp sass css vendor images js && touch README.md index.html sass/style.scss js/script.js && curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
         "build": "npm run build:sass && npm run build:autoprefixer && npm run test",
         "build:autoprefixer": "autoprefixer-cli css/style.css",

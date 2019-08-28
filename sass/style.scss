@@ -3,17 +3,19 @@
 @import "normalize";
 @import "layout";
 
-/* Components */
+/* Components
 
 @import "components/form_field";
 
-/* Sections */
+ Sections/
 
 @import "section/registration_form";
 
-/* Pages / Views */
+/* Pages / Views 
 
-@import "pages/registration";
+@import "pages/registration" ; */
+
 h1 {
     color: red;
+    font-size: 10px;
 }
