@@ -245,10 +245,32 @@ nav { width: 100%; }
 .chart-photo img { width: 100%; }
 
 /* content links */
-.content-links { background: #fff; flex: 1 1; margin: 15px; width: 100%; height: auto; }
+.links-wrapper { background: #fff; flex: 1 1; margin: 15px; width: 100%; height: auto; }
 
-.content-links svg { width: 15px; height: 15px; }
+.links-wrapper svg { width: 15px; height: 14px; }
 
 .button-links { display: flex; justify-content: center; }
 
-.button-links button { height: 32px; width: 110px; }
+.button-links button { height: 32px; width: 110px; margin-top: 30px; background-color: #F58220; border-radius: 5%; border: 2px solid #F58220; }
+
+.button-links button span { color: white; font-size: 20px; }
+
+.links-content { width: 60%; display: flex; margin: 0 auto; flex-direction: row; align-content: space-between; margin: 2% 20%; }
+
+.links-content ul { list-style-type: none; padding: 0; }
+
+.link-names { width: 30%; }
+
+.link-source { width: 40%; }
+
+.link-icons { width: 10%; }
+
+.link-names li { margin: 10px 0; padding: 18px 0 10px 25px; line-height: 20px; border-top: 2px solid #B1B1B1; }
+
+.link-source li { border-top: 2px solid #B1B1B1; line-height: 20px; margin: 10px 0; padding: 18px 0 10px 0px; }
+
+.link-icons li { border-top: 2px solid #B1B1B1; line-height: 20px; margin: 10px 0; padding: 18px 0 10px 0px; }
+
+.link-icons li svg { margin: 0 7px; }
+
+.home-page:hover { background: #616161; }
