@@ -435,6 +435,7 @@ nav {
 .button-links {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .button-links button {
@@ -485,6 +486,7 @@ nav {
 
 .link a {
     text-decoration: none;
+    word-wrap: break-word;
 }
 
 .link svg {
@@ -559,15 +561,16 @@ nav {
     }
     .sidebar.show {
         .sidebar {
-            height: 100%;
+            height: auto;
             position: relative;
         }
-        .sidebar ul {
-            display: flex;
+        ul {
             background-color: #191919;
-            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .sidebar ul li {
+        ul li {
             display: flex;
             background-color: #191919;
             position: relative;
