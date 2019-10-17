@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+$main-font: 'Open Sans',
+sans-serif;
+.topbar {
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    z-index: 1;
+    svg {
+        height: 20px;
+        width: 20px;
+        fill: rgb(133, 133, 133);
+    }
+    ul {
+        list-style-type: none;
+        display: -webkit-flex;
+        display: flex;
+        margin: 0;
+        li {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            border-left: 2px solid #F5F5F2;
+        }
+    }
+    .arrow-down {
+        height: 15px;
+    }
+}
+
+.topbar-icon {
+    margin: 0 10px;
+    color: #B1B1B1;
+}
+
+.topbar-cash {
+    font-size: 20px;
+    color: rgb(133, 133, 133);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.topbar-name {
+    color: #3581b8;
+    padding-left: 15px;
+}

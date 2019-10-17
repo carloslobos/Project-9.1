@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+$main-font: 'Open Sans',
+sans-serif;
+@media(max-width: 767px) {
+    @include grid('sm');
+    .sidebar {
+        width: 100%;
+        height: 62px;
+    }
+    .sidebar ul {
+        display: none;
+        margin: 0;
+    }
+    .manager-sidebar {
+        display: none;
+    }
+    .sidebar-wrapper {
+        height: 62px;
+    }
+    .logo-flex {
+        display: flex;
+        justify-content: space-around;
+    }
+    .wrapper {
+        display: block;
+        margin-bottom: 100px;
+    }
+    .topbar {
+        display: flex;
+        justify-content: center;
+        bottom: 0;
+        border-top: 2px solid #F5F5F2;
+    }
+    .content-wrapper {
+        margin: 0;
+        margin-bottom: 76px;
+    }
+    .content-links {
+        width: 100%;
+        margin: 0;
+        padding: 0 30px;
+    }
+    .link svg {
+        display: inline;
+    }
+    .sidebar.show {
+        .sidebar {
+            height: auto;
+            position: relative;
+        }
+        ul {
+            background-color: #191919;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        ul li {
+            display: flex;
+            background-color: #191919;
+            position: relative;
+        }
+        .manager-sidebar {
+            display: flex;
+            background-color: #191919;
+            justify-content: space-around;
+        }
+    }
+    .date span {
+        padding-right: 15%;
+    }
+    .hamburger {
+        display: block;
+    }
+    .topbar .user-name {
+        display: none;
+    }
+    .chart button {
+        margin: 5% 0;
+        font-size: 15px;
+    }
+    .chart-buttons button div {
+        margin: 1px;
+    }
+    .button-circle {
+        height: 15px;
+        width: 15px;
+    }
+    .chart {
+        padding: 5% 12%;
+    }
+}
+
+@media(min-width: 768px) {
+    @include grid('md');
+    .link svg {
+        display: inline;
+    }
+}
+
+@media(min-width: 992px) {
+    @include grid('lg');
+    .link svg {
+        display: none;
+    }
+}
+
+@media(min-width: 1200px) {
+    @include grid('xl');
+}
