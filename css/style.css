@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 .sidebar-wrapper { background-color: #191919; flex: 0 0 180px; z-index: 2; }
 
 .flex-topbar { display: flex; width: 100%; }
@@ -199,13 +195,13 @@ body { margin: 0 auto; max-width: 100%; height: 100%; color: #0E0E0E; background
   .content-links { width: 100%; margin: 0; padding: 0 30px; }
   .link svg { display: inline; }
   .sidebar.show .sidebar { height: auto; position: relative; }
-  .sidebar.show ul { background-color: #191919; display: flex; flex-direction: column; align-items: center; }
+  .sidebar.show ul { background-color: #191919; display: flex; flex-direction: column; padding-left: 10vw; }
   .sidebar.show ul li { display: flex; background-color: #191919; position: relative; }
   .sidebar.show .manager-sidebar { display: flex; background-color: #191919; justify-content: space-around; }
   .date span { padding-right: 15%; }
-  .hamburger { display: block; }
+  .hamburger { display: block; cursor: pointer; }
   .topbar .user-name { display: none; }
-  .chart button { margin: 5% 0; font-size: 15px; }
+  .chart button { margin: 5% 0; font-size: 15px; line-height: 14px; }
   .chart-buttons button div { margin: 1px; }
   .button-circle { height: 15px; width: 15px; }
   .chart { padding: 5% 12%; } }
