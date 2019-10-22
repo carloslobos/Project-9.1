@@ -1,32 +1,33 @@
+@import "variables";
 .content-wrapper {
     flex: auto;
     margin-top: 60px;
 }
 
 .content-chart {
-    background: #fff;
+    background: $background;
     flex: 1 1;
     margin: 15px;
 }
 
 .head-content {
     font-size: 18px;
-    border-bottom: 1px solid #B1B1B1;
+    border-bottom: 1px solid $border;
     width: 100%;
     padding: 1%;
-    color: rgb(185, 183, 183);
+    color: $content-font;
 }
 
 .calendar {
     width: 15px;
     height: 15px;
-    fill: rgb(133, 133, 133);
+    fill: $content-font;
 }
 
 .date {
     width: 350px;
     height: 40px;
-    border: 1px solid rgb(133, 133, 133);
+    border: 1px solid $border;
     margin-top: 5%;
     border-radius: 3px;
     span {
@@ -37,7 +38,7 @@
 }
 
 .first-date {
-    border-right: 1px solid #B1B1B1;
+    border-right: 1px solid $border;
 }
 
 .second-date {
@@ -52,7 +53,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #B1B1B1;
+    border-bottom: 1px solid $border;
     padding-bottom: 3%;
     button {
         display: flex;
@@ -62,11 +63,11 @@
         height: 40px;
         width: 40px;
         margin-left: 2%;
-        background-color: #F58220;
+        background-color: $button;
         border-radius: 5%;
-        border: 2px solid #F58220;
+        border: 2px solid $button;
         svg {
-            fill: white;
+            fill: $background;
         }
     }
 }
@@ -84,8 +85,8 @@
     }
     span {
         padding-bottom: 8px;
-        border-bottom: 1px solid #B1B1B1;
-        color: rgb(156, 154, 154);
+        border-bottom: 1px solid $border;
+        color: $content-font;
     }
 }
 
@@ -114,7 +115,7 @@
     max-width: 100%;
     justify-content: center;
     padding: 5% 20%;
-    color: rgb(156, 154, 154);
+    color: $content-font;
     button {
         width: 100%;
         margin: 5% 4%;
@@ -123,7 +124,7 @@
         background: white;
         border: 0;
         div span {
-            color: rgb(156, 154, 154);
+            color: $content-font;
         }
     }
     button:hover {
@@ -134,7 +135,7 @@
 .chart-buttons {
     display: flex;
     justify-content: center;
-    color: rgb(156, 154, 154);
+    color: $content-font;
     button div {
         margin: 10px;
     }

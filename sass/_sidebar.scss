@@ -1,6 +1,6 @@
 @import "variables";
 .sidebar-wrapper {
-    background-color: #191919;
+    background-color: $sidebar-background;
     flex: 0 0 180px;
     z-index: 2;
 }
@@ -12,7 +12,7 @@
 
 .logo {
     margin: 10px;
-    color: white;
+    color: $background;
     margin-bottom: 0;
 }
 
@@ -24,7 +24,7 @@
 
 .hamburger {
     font-size: 25px;
-    color: white;
+    color: $background;
     margin-left: 10%;
     display: none;
 }
@@ -34,7 +34,7 @@ nav {
 }
 
 .sidebar {
-    background-color: #191919;
+    background-color: $sidebar-background;
     height: 100%;
     position: fixed;
     width: 180px;
@@ -43,7 +43,6 @@ nav {
     nav ul {
         list-style-type: none;
         vertical-align: center;
-        color: #616161;
         padding-inline-start: 0px;
         width: 100%;
         margin-top: 0;
@@ -51,7 +50,7 @@ nav {
             width: 20px;
             height: 20px;
             position: absolute;
-            fill: #616161;
+            fill: $sidebar-font;
         }
     }
     ul li {
@@ -60,16 +59,17 @@ nav {
         span {
             margin-left: 35px;
             font-family: $main-font;
+            color: $sidebar-font;
         }
     }
     li:hover {
         background-color: #282828;
-        border-left: 5px solid #F58220;
-        color: #BEBEBE;
-        fill: #BEBEBE;
+        border-left: 5px solid $button;
+        color: $sidebar-hover;
+        fill: $sidebar-hover;
         cursor: pointer;
         svg {
-            fill: #BEBEBE;
+            fill: $sidebar-hover;
         }
     }
 }
@@ -78,11 +78,11 @@ nav {
 /*Manager sidebar */
 
 .border-sidebar {
-    border-top: 1px solid #616161;
+    border-top: 1px solid $sidebar-font;
 }
 
 .manager-sidebar {
-    color: #616161;
+    color: $sidebar-font;
     padding: 20px;
     img {
         border-radius: 50%;

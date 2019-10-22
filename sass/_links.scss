@@ -1,5 +1,6 @@
+@import "variables";
 .links-wrapper {
-    background: #fff;
+    background: $background;
     flex: 1 1;
     margin: 15px;
     height: auto;
@@ -17,11 +18,11 @@
         height: 32px;
         width: 110px;
         margin-top: 30px;
-        background-color: #F58220;
+        background-color: $button;
         border-radius: 5%;
-        border: 2px solid #F58220;
+        border: 2px solid $button;
         span {
-            color: white;
+            color: $background;
             font-size: 20px;
         }
     }
@@ -34,7 +35,7 @@
 }
 
 .first-link {
-    border-top: 1px solid #b1b1b1;
+    border-top: 1px solid $border;
 }
 
 .link {
@@ -42,12 +43,12 @@
     width: 100%;
     justify-content: space-between;
     padding: 15px 0;
-    border-bottom: 1px solid #b1b1b1;
+    border-bottom: 1px solid $border;
     div {
         width: 40%;
     }
     div:first-child {
-        color: rgb(156, 154, 154);
+        color: $content-font;
         font-weight: bold;
         padding-left: 15px;
     }
@@ -66,18 +67,18 @@
 }
 
 .link:hover {
-    background-color: #F1F3F3;
+    background-color: $background;
     svg {
         display: inline;
     }
 }
 
 .svg-links {
-    fill: #F58220;
+    fill: $button;
 }
 
 .svg-trash {
-    fill: rgb(167, 164, 164);
+    fill: $content-font;
 }
 
 .end-button {
